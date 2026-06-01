@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
+  if (window.ShauryaFirebase?.auth) {
+    window.AdminSecurity.attachSecurity(window.ShauryaFirebase.auth);
+  }
+    
   const result = SF.initFirebase();
   if (!result) return;
 
