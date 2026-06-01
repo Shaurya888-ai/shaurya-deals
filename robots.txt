@@ -1,0 +1,14 @@
+# robots.txt — Shaurya Deals
+# https://your-domain.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Block admin page from crawlers
+Disallow: /admin.html
+
+# Block Firebase config from crawlers
+Disallow: /firebase-config.js
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml

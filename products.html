@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Products — Shaurya Deals</title>
+  <meta name="description" content="Browse hundreds of curated affiliate deals across electronics, fashion, home, beauty, and more. Updated daily." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/products.html" />
+  <meta property="og:title"       content="All Products — Shaurya Deals" />
+  <meta property="og:description" content="Browse curated affiliate deals across all categories." />
+  <meta property="og:url"         content="https://your-domain.com/products.html" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">S</div>Shaurya Deals
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"    class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link active">Products</a></li>
+      <li><a href="about.html"    class="nav-link">About</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-search">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="nav-search-input" placeholder="Search deals…" aria-label="Search" />
+    </div>
+    <div class="nav-actions">
+      <a href="admin.html" class="btn btn-secondary btn-sm">Admin</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-mobile" id="nav-mobile">
+  <a href="index.html"    class="nav-link">🏠 Home</a>
+  <a href="products.html" class="nav-link">🛍️ Products</a>
+  <a href="about.html"    class="nav-link">ℹ️ About</a>
+  <a href="contact.html"  class="nav-link">📬 Contact</a>
+</div>
+
+<!-- Page Header -->
+<header class="page-header">
+  <div class="container page-header-content">
+    <div class="section-label">Explore</div>
+    <h1 class="page-title">All Products</h1>
+    <p class="page-subtitle">Browse our full collection of hand-picked deals — updated daily.</p>
+  </div>
+</header>
+
+<!-- Affiliate Disclosure -->
+<div class="disclosure-banner">
+  ⚠️ <strong>Affiliate Disclosure:</strong> We earn a commission on purchases made through our links, at no extra cost to you.
+  <a href="disclaimer.html">Learn more</a>
+</div>
+
+<!-- Products Section -->
+<section class="section" style="padding-top:var(--space-2xl)">
+  <div class="container">
+
+    <!-- Category Chips -->
+    <div class="category-nav" id="category-chips" role="navigation" aria-label="Filter by category">
+      <div class="skeleton" style="height:38px;width:110px;border-radius:999px"></div>
+      <div class="skeleton" style="height:38px;width:90px;border-radius:999px"></div>
+      <div class="skeleton" style="height:38px;width:100px;border-radius:999px"></div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar" role="search">
+      <div class="input-group" style="flex:2;min-width:240px">
+        <label class="input-label" for="search-input">🔍 Search Products</label>
+        <input class="input-field" type="search" id="search-input" placeholder="Search by name, category, keyword…" />
+      </div>
+      <div class="input-group" style="min-width:180px">
+        <label class="input-label" for="sort-select">Sort By</label>
+        <select class="input-field" id="sort-select">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="name-asc">Name A → Z</option>
+          <option value="name-desc">Name Z → A</option>
+          <option value="featured">Featured First</option>
+        </select>
+      </div>
+      <div style="align-self:flex-end">
+        <span style="font-size:0.85rem;color:var(--text-muted)" id="results-count">Loading…</span>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products-grid" id="products-grid" role="list" aria-label="Products">
+      <!-- Dynamically populated -->
+    </div>
+
+    <!-- Load More -->
+    <div style="text-align:center;margin-top:var(--space-2xl)">
+      <button class="btn btn-secondary btn-lg" id="load-more-btn" style="display:none">
+        Load More
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:1rem"><div class="logo-icon">S</div>Shaurya Deals</a>
+        <p class="footer-desc">Your trusted destination for the best affiliate deals across categories.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Explore</p>
+        <ul class="footer-links">
+          <li><a href="index.html"    class="footer-link">Home</a></li>
+          <li><a href="products.html" class="footer-link">Products</a></li>
+          <li><a href="about.html"    class="footer-link">About</a></li>
+          <li><a href="contact.html"  class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Legal</p>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="disclaimer.html"     class="footer-link">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="contact.html"                   class="footer-link">Contact Us</a></li>
+          <li><a href="mailto:contact@shauryadeals.com" class="footer-link">Email Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© <span id="year"></span> Shaurya Deals. All rights reserved.</p>
+      <div class="footer-legal-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<!-- AI Assistant -->
+<div class="ai-fab">
+  <button class="ai-fab-btn" id="ai-fab-btn" aria-label="Open AI assistant">🤖</button>
+  <span class="ai-coming-soon">Soon</span>
+  <div class="ai-chat-panel" id="ai-chat-panel">
+    <div class="ai-chat-header">
+      <div class="ai-chat-avatar">🤖</div>
+      <div><div class="ai-chat-title">Shaurya AI</div><div class="ai-chat-status">Deal Finder</div></div>
+      <button class="ai-chat-close" id="ai-chat-close">✕</button>
+    </div>
+    <div class="ai-chat-messages" id="ai-chat-messages"></div>
+    <div class="ai-chat-input-row">
+      <input class="ai-chat-input" id="ai-chat-input" type="text" placeholder="Ask about deals…" />
+      <button class="ai-chat-send" id="ai-chat-send">➤</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

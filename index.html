@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Shaurya Deals — Discover the Best Deals Online</title>
+  <meta name="description" content="Shaurya Deals curates the best affiliate deals across electronics, fashion, home, and more. Save big with hand-picked products from Amazon and top brands." />
+  <meta name="keywords" content="deals, affiliate deals, best products, Amazon deals, discount, offers, Shaurya Deals" />
+  <meta name="author" content="Shaurya Deals" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Shaurya Deals — Best Deals Online" />
+  <meta property="og:description" content="Discover hand-picked deals across electronics, fashion, home products and more." />
+  <meta property="og:image"       content="https://your-domain.com/og-image.jpg" />
+  <meta property="og:url"         content="https://your-domain.com/" />
+  <meta property="og:site_name"   content="Shaurya Deals" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@shauryadeals" />
+  <meta name="twitter:title"       content="Shaurya Deals — Best Deals Online" />
+  <meta name="twitter:description" content="Discover hand-picked deals across electronics, fashion, home products and more." />
+  <meta name="twitter:image"       content="https://your-domain.com/og-image.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Shaurya Deals",
+    "url": "https://your-domain.com",
+    "description": "Premium affiliate deals curated for you.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://your-domain.com/products.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- ── Announcement Bar ─────────────────────────────────────────────────────── -->
+<div class="announcement-bar" role="banner">
+  🔥 Hot Deals Updated Daily — Bookmark Us to Never Miss a Deal! ⚡
+</div>
+
+<!-- ── Navbar ──────────────────────────────────────────────────────────────── -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="container">
+    <a href="index.html" class="nav-logo" aria-label="Shaurya Deals Home">
+      <div class="logo-icon" aria-hidden="true">S</div>
+      Shaurya Deals
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-link" aria-current="page">Home</a></li>
+      <li><a href="products.html"class="nav-link">Products</a></li>
+      <li><a href="about.html"   class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-search" role="search">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input type="search" id="nav-search-input" placeholder="Search deals…" aria-label="Search products" />
+    </div>
+
+    <div class="nav-actions">
+      <a href="admin.html" class="btn btn-secondary btn-sm">Admin</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Mobile Nav ─────────────────────────────────────────────────────────── -->
+<div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html"    class="nav-link">🏠 Home</a>
+  <a href="products.html" class="nav-link">🛍️ Products</a>
+  <a href="about.html"    class="nav-link">ℹ️ About</a>
+  <a href="contact.html"  class="nav-link">📬 Contact</a>
+  <div class="nav-search-mobile">
+    <div class="nav-search" style="width:100%">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" placeholder="Search deals…" aria-label="Search products"
+             onkeydown="if(event.key==='Enter'&&this.value.trim())window.location.href='products.html?q='+encodeURIComponent(this.value.trim())" />
+    </div>
+  </div>
+</div>
+
+<!-- ── Affiliate Disclosure Banner ──────────────────────────────────────────── -->
+<div class="disclosure-banner" role="note">
+  ⚠️ <strong>Affiliate Disclosure:</strong> We earn a commission when you purchase through our links, at no extra cost to you.
+  <a href="disclaimer.html">Learn more</a>
+</div>
+
+<!-- ── Hero Section ─────────────────────────────────────────────────────────── -->
+<section class="hero" id="hero" aria-label="Hero">
+  <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow animate-fade-up">
+        <span class="dot"></span> Curated Affiliate Deals
+      </div>
+
+      <h1 class="hero-title animate-fade-up stagger-1">
+        Discover <span class="gradient-text">Premium</span><br>
+        Deals <span class="outline-text">Curated</span><br>
+        For You
+      </h1>
+
+      <p class="hero-description animate-fade-up stagger-2">
+        Hand-picked products from Amazon and top affiliate networks.
+        Save money on electronics, fashion, home goods, and much more.
+      </p>
+
+      <!-- Hero Search -->
+      <div class="hero-search animate-fade-up stagger-3">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="color:var(--text-muted);flex-shrink:0"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" id="hero-search-input" placeholder="Search for products, brands, categories…" aria-label="Search products" />
+        <button class="btn btn-primary btn-sm" id="hero-search-btn" aria-label="Search">Search</button>
+      </div>
+
+      <div class="hero-cta animate-fade-up stagger-4">
+        <a href="products.html" class="btn btn-primary btn-lg">Browse All Deals</a>
+        <a href="about.html"    class="btn btn-secondary btn-lg">About Us</a>
+      </div>
+
+      <div class="hero-stats animate-fade-up stagger-5">
+        <div class="hero-stat">
+          <span class="hero-stat-num"><span data-counter="500" id="counter-products">0</span><span class="accent">+</span></span>
+          <span class="hero-stat-label">Products Listed</span>
+        </div>
+        <div class="hero-stat-sep" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num"><span data-counter="20" id="counter-cats">0</span><span class="accent">+</span></span>
+          <span class="hero-stat-label">Categories</span>
+        </div>
+        <div class="hero-stat-sep" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num"><span data-counter="10000" id="counter-saves">0</span><span class="accent">+</span></span>
+          <span class="hero-stat-label">Happy Shoppers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Category Navigation ────────────────────────────────────────────────── -->
+<section class="section" style="padding:var(--space-3xl) 0 var(--space-xl)" aria-label="Product Categories">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Browse By</div>
+      <h2 class="section-title">Product Categories</h2>
+    </div>
+    <div class="category-nav" id="home-categories" role="navigation" aria-label="Categories">
+      <!-- Dynamically populated from Firestore -->
+      <div class="skeleton" style="height:38px;width:120px;border-radius:999px"></div>
+      <div class="skeleton" style="height:38px;width:100px;border-radius:999px"></div>
+      <div class="skeleton" style="height:38px;width:90px;border-radius:999px"></div>
+      <div class="skeleton" style="height:38px;width:110px;border-radius:999px"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Featured Products ──────────────────────────────────────────────────── -->
+<section class="section" id="featured" aria-label="Featured Products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Hand-Picked</div>
+      <h2 class="section-title">Featured Deals</h2>
+      <p class="section-sub">Our editors' top picks — the very best products at the best prices.</p>
+    </div>
+
+    <div class="products-grid" id="featured-products-grid" role="list" aria-label="Featured products">
+      <!-- Dynamically populated from Firestore -->
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-2xl)">
+      <a href="products.html?filter=featured" class="btn btn-secondary btn-lg">View All Featured →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trending Products ──────────────────────────────────────────────────── -->
+<section class="section" id="trending" style="background:linear-gradient(180deg,var(--bg-secondary),var(--bg-primary))" aria-label="Trending Products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">🔥 Hot Right Now</div>
+      <h2 class="section-title">Trending Products</h2>
+      <p class="section-sub">See what everyone is buying right now — freshly updated picks.</p>
+    </div>
+
+    <div class="products-grid" id="trending-products-grid" role="list" aria-label="Trending products">
+      <!-- Dynamically populated from Firestore -->
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-2xl)">
+      <a href="products.html" class="btn btn-primary btn-lg">Explore All Products →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── About Preview ─────────────────────────────────────────────────────── -->
+<section class="section" aria-label="About Shaurya Deals">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center">
+      <div>
+        <div class="section-label">Who We Are</div>
+        <h2 class="section-title" style="text-align:left">Deals You Can <span style="-webkit-text-fill-color:var(--accent-cyan)">Trust</span></h2>
+        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:1.5rem">
+          Shaurya Deals is a curated affiliate marketplace where every product is hand-reviewed
+          before being listed. We only feature products we believe in — so you can shop with confidence.
+        </p>
+        <p style="color:var(--text-secondary);line-height:1.8;margin-bottom:2rem">
+          We partner with Amazon and other trusted affiliate networks to bring you the best deals
+          without inflating prices. Transparency is our core value.
+        </p>
+        <a href="about.html" class="btn btn-secondary">Learn More About Us →</a>
+      </div>
+      <div class="values-grid" style="margin-top:0">
+        <div class="value-card">
+          <div class="value-icon">✅</div>
+          <h3 class="value-title">Verified Products</h3>
+          <p class="value-desc">Every product is manually reviewed before being added.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💰</div>
+          <h3 class="value-title">No Extra Cost</h3>
+          <p class="value-desc">You pay the same price — we earn a small affiliate commission.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔄</div>
+          <h3 class="value-title">Updated Daily</h3>
+          <p class="value-desc">New deals are added every single day across all categories.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔒</div>
+          <h3 class="value-title">Secure Links</h3>
+          <p class="value-desc">All affiliate links are verified and go directly to trusted retailers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact Preview ────────────────────────────────────────────────────── -->
+<section class="section" style="background:var(--bg-secondary)" aria-label="Contact">
+  <div class="container">
+    <div style="text-align:center;max-width:600px;margin:0 auto">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Have a Question?</h2>
+      <p class="section-sub" style="margin-bottom:2rem">
+        Want to suggest a product, report an issue, or partner with us? We'd love to hear from you.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+        <a href="mailto:contact@shauryadeals.com" class="btn btn-secondary btn-lg">📧 Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:1rem">
+          <div class="logo-icon">S</div>
+          Shaurya Deals
+        </a>
+        <p class="footer-desc">
+          Your trusted destination for the best affiliate deals across categories.
+          We curate so you don't have to.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+          <a href="#" class="social-btn" aria-label="Telegram">✈</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Explore</p>
+        <ul class="footer-links">
+          <li><a href="index.html"    class="footer-link">Home</a></li>
+          <li><a href="products.html" class="footer-link">All Products</a></li>
+          <li><a href="products.html?filter=featured" class="footer-link">Featured Deals</a></li>
+          <li><a href="about.html"    class="footer-link">About Us</a></li>
+          <li><a href="contact.html"  class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Categories</p>
+        <ul class="footer-links">
+          <li><a href="products.html?category=Electronics" class="footer-link">Electronics</a></li>
+          <li><a href="products.html?category=Fashion"     class="footer-link">Fashion</a></li>
+          <li><a href="products.html?category=Home"        class="footer-link">Home &amp; Living</a></li>
+          <li><a href="products.html?category=Books"       class="footer-link">Books</a></li>
+          <li><a href="products.html?category=Health"      class="footer-link">Health</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Legal</p>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="disclaimer.html"     class="footer-link">Disclaimer</a></li>
+          <li><a href="disclaimer.html#affiliate" class="footer-link">Affiliate Disclosure</a></li>
+          <li><a href="disclaimer.html#terms"     class="footer-link">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">
+        © <span id="year"></span> Shaurya Deals. All rights reserved.
+        Built with ❤️ for deal hunters.
+      </p>
+      <div class="footer-legal-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Scroll to Top ──────────────────────────────────────────────────────── -->
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<!-- ── AI Assistant ──────────────────────────────────────────────────────── -->
+<div class="ai-fab" role="complementary" aria-label="AI Assistant">
+  <button class="ai-fab-btn" id="ai-fab-btn" aria-label="Open AI assistant">🤖</button>
+  <span class="ai-coming-soon">Soon</span>
+
+  <div class="ai-chat-panel" id="ai-chat-panel" role="dialog" aria-label="AI Chat">
+    <div class="ai-chat-header">
+      <div class="ai-chat-avatar">🤖</div>
+      <div>
+        <div class="ai-chat-title">Shaurya AI</div>
+        <div class="ai-chat-status">Deal Finder Assistant</div>
+      </div>
+      <button class="ai-chat-close" id="ai-chat-close" aria-label="Close chat">✕</button>
+    </div>
+    <div class="ai-chat-messages" id="ai-chat-messages"></div>
+    <div class="ai-chat-input-row">
+      <input class="ai-chat-input" id="ai-chat-input" type="text" placeholder="Ask about deals…" aria-label="Chat message" />
+      <button class="ai-chat-send" id="ai-chat-send" aria-label="Send message">➤</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Firebase SDKs ──────────────────────────────────────────────────────── -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<!-- ── App Scripts ─────────────────────────────────────────────────────────── -->
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+<script>
+  // Set year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

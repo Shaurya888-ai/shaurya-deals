@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Dynamic title & meta set by script.js -->
+  <title>Product Details — Shaurya Deals</title>
+  <meta name="description" content="View full product details, description, and buy via our affiliate link." />
+  <meta name="robots" content="index, follow" />
+  <!-- OG / Twitter tags updated dynamically by script.js -->
+  <meta property="og:type"  content="product" />
+  <meta property="og:site_name" content="Shaurya Deals" />
+  <!-- JSON-LD injected dynamically below -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">S</div>Shaurya Deals</a>
+    <ul class="nav-links">
+      <li><a href="index.html"    class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link active">Products</a></li>
+      <li><a href="about.html"    class="nav-link">About</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-search">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="search" id="nav-search-input" placeholder="Search deals…" aria-label="Search" />
+    </div>
+    <div class="nav-actions">
+      <a href="admin.html" class="btn btn-secondary btn-sm">Admin</a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-mobile" id="nav-mobile">
+  <a href="index.html"    class="nav-link">🏠 Home</a>
+  <a href="products.html" class="nav-link">🛍️ Products</a>
+  <a href="about.html"    class="nav-link">ℹ️ About</a>
+  <a href="contact.html"  class="nav-link">📬 Contact</a>
+</div>
+
+<!-- Affiliate Disclosure -->
+<div class="disclosure-banner">
+  ⚠️ <strong>Affiliate Disclosure:</strong> Purchasing via our links earns us a small commission at no extra cost to you.
+  <a href="disclaimer.html">Learn more</a>
+</div>
+
+<!-- Product Detail -->
+<main class="product-detail" id="product-detail-container">
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="products.html">Products</a>
+      <span class="sep">›</span>
+      <span id="detail-category" style="color:var(--text-secondary)">Loading…</span>
+    </nav>
+
+    <div class="product-detail-grid">
+
+      <!-- Image -->
+      <div class="product-detail-image">
+        <img
+          id="detail-image"
+          src="https://via.placeholder.com/600x600?text=Loading…"
+          alt="Product image"
+          loading="eager"
+        />
+      </div>
+
+      <!-- Info -->
+      <div class="product-detail-info">
+
+        <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap">
+          <span class="badge badge-featured" id="detail-badge" style="display:none">⭐ Featured</span>
+          <span class="badge badge-new">🆕 New Deal</span>
+        </div>
+
+        <div>
+          <div class="product-detail-category" id="detail-category-label">Loading…</div>
+          <h1 class="product-detail-title" id="detail-title">Loading product…</h1>
+        </div>
+
+        <p class="product-detail-desc" id="detail-description">
+          Please wait while we load the product details.
+        </p>
+
+        <!-- Meta info box -->
+        <div class="product-detail-meta">
+          <div class="product-detail-meta-row">
+            <span>Category</span>
+            <span id="detail-meta-category">—</span>
+          </div>
+          <div class="product-detail-meta-row">
+            <span>Date Added</span>
+            <span id="detail-date">—</span>
+          </div>
+          <div class="product-detail-meta-row">
+            <span>Source</span>
+            <span style="color:var(--accent-cyan)">Amazon / Affiliate Partner</span>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="product-detail-actions">
+          <button class="btn btn-primary btn-lg" id="detail-buy-btn" style="flex:1">
+            🛒 Buy Now — Best Price
+          </button>
+          <a class="btn btn-secondary" id="detail-deal-btn" href="#" target="_blank" rel="noopener noreferrer nofollow">
+            View Deal ↗
+          </a>
+          <button class="btn btn-ghost" id="share-btn" title="Share this deal">
+            📤
+          </button>
+        </div>
+
+        <!-- Trust badges -->
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem">
+          <span style="font-size:.8rem;color:var(--text-muted)">🔒 Secure affiliate link</span>
+          <span style="font-size:.8rem;color:var(--text-muted)">✅ No extra cost</span>
+          <span style="font-size:.8rem;color:var(--text-muted)">💳 Pay at retailer</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Affiliate notice -->
+    <div style="margin-top:2.5rem;padding:1rem 1.5rem;background:var(--bg-card);border-radius:var(--radius-md);border:1px solid var(--border-card);font-size:.85rem;color:var(--text-muted)">
+      <strong style="color:var(--text-secondary)">💡 Note:</strong>
+      Clicking "Buy Now" takes you to our affiliate partner's website. Shaurya Deals earns a small commission
+      from qualifying purchases. The price you pay is exactly the same.
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Related Products -->
+    <section aria-label="Related products">
+      <div class="section-header" style="text-align:left;margin-bottom:2rem">
+        <div class="section-label">You May Also Like</div>
+        <h2 class="section-title" style="font-size:1.75rem">Related Products</h2>
+      </div>
+      <div class="products-grid" id="related-products-grid"></div>
+    </section>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:1rem"><div class="logo-icon">S</div>Shaurya Deals</a>
+        <p class="footer-desc">Your trusted destination for the best affiliate deals.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Explore</p>
+        <ul class="footer-links">
+          <li><a href="index.html"    class="footer-link">Home</a></li>
+          <li><a href="products.html" class="footer-link">Products</a></li>
+          <li><a href="about.html"    class="footer-link">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Legal</p>
+        <ul class="footer-links">
+          <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+          <li><a href="disclaimer.html"     class="footer-link">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Support</p>
+        <ul class="footer-links">
+          <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© <span id="year"></span> Shaurya Deals. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<!-- AI Assistant -->
+<div class="ai-fab">
+  <button class="ai-fab-btn" id="ai-fab-btn" aria-label="Open AI assistant">🤖</button>
+  <span class="ai-coming-soon">Soon</span>
+  <div class="ai-chat-panel" id="ai-chat-panel">
+    <div class="ai-chat-header">
+      <div class="ai-chat-avatar">🤖</div>
+      <div><div class="ai-chat-title">Shaurya AI</div><div class="ai-chat-status">Deal Finder</div></div>
+      <button class="ai-chat-close" id="ai-chat-close">✕</button>
+    </div>
+    <div class="ai-chat-messages" id="ai-chat-messages"></div>
+    <div class="ai-chat-input-row">
+      <input class="ai-chat-input" id="ai-chat-input" type="text" placeholder="Ask about this product…" />
+      <button class="ai-chat-send" id="ai-chat-send">➤</button>
+    </div>
+  </div>
+</div>
+
+<!-- JSON-LD Structured Data (updated dynamically) -->
+<script id="product-jsonld" type="application/ld+json">{}</script>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Sync category label to meta too
+  const catEl = document.getElementById("detail-category");
+  const catLabel = document.getElementById("detail-category-label");
+  const catMeta  = document.getElementById("detail-meta-category");
+  const observer = new MutationObserver(() => {
+    if (catLabel) catLabel.textContent = catEl.textContent;
+    if (catMeta)  catMeta.textContent  = catEl.textContent;
+  });
+  if (catEl) observer.observe(catEl, { childList: true });
+</script>
+</body>
+</html>
