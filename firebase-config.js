@@ -17,21 +17,21 @@
 
 // ─── YOUR FIREBASE CONFIGURATION ─────────────────────────────────────────────
 const firebaseConfig = {
-  apiKey:            "YOUR_API_KEY",
-  authDomain:        "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId:         "YOUR_PROJECT_ID",
-  storageBucket:     "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId:             "YOUR_APP_ID",
-  measurementId:     "YOUR_MEASUREMENT_ID"   // optional – Analytics
+  apiKey:            "AIzaSyBEUMLcvD471WdTCzHvpN655NQScvMgx14",
+  authDomain:        "shaurya-deals.firebaseapp.com",
+  projectId:         "shaurya-deals",
+  storageBucket:     "shaurya-deals.firebasestorage.app",
+  messagingSenderId: "409948866094",
+  appId:             "1:409948866094:web:e427f4adf4148b1f93c1bf",
+  measurementId:     "G-14ZS0CVS51"   // optional – Analytics
 };
 
 // ─── ADMIN EMAILS ─────────────────────────────────────────────────────────────
 // List every email address that should have admin access.
 // These users will be able to add / edit / delete products via admin.html.
 const ADMIN_EMAILS = [
-  "your-admin@gmail.com",
-  "another-admin@example.com"
+  "babushaurya888@gmail.com",
+  "shauryakumar210022@gmail.com"
 ];
 
 // ─── SITE METADATA ────────────────────────────────────────────────────────────
