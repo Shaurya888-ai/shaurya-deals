@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | Shaurya Deals</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        Shaurya Deals Admin
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+</header>
+
+<section class="admin-container">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="auth-section">
+
+        <button id="googleLoginBtn" class="btn">
+            Login With Google
+        </button>
+
+        <button id="githubLoginBtn" class="btn">
+            Login With GitHub
+        </button>
+
+        <button id="logoutBtn" class="btn danger-btn">
+            Logout
+        </button>
+
+    </div>
+
+    <hr>
+
+    <h2>Add Product</h2>
+
+    <form id="productForm">
+
+        <input
+            type="text"
+            id="productName"
+            placeholder="Product Name"
+            required
+        >
+
+        <input
+            type="text"
+            id="productImage"
+            placeholder="Product Image URL"
+            required
+        >
+
+        <textarea
+            id="productDescription"
+            placeholder="Product Description"
+            required
+        ></textarea>
+
+        <input
+            type="url"
+            id="affiliateLink"
+            placeholder="Affiliate Link"
+            required
+        >
+
+        <input
+            type="text"
+            id="productCategory"
+            placeholder="Category"
+            required
+        >
+
+        <label>
+            <input
+                type="checkbox"
+                id="featuredProduct"
+            >
+            Featured Product
+        </label>
+
+        <button
+            type="submit"
+            class="btn"
+        >
+            Add Product
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>All Products</h2>
+
+    <div id="adminProducts">
+
+    </div>
+
+</section>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
