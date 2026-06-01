@@ -38,10 +38,10 @@ const ADMIN_EMAILS = [
 const SITE_CONFIG = {
   name:        "Shaurya Deals",
   tagline:     "Discover the Best Deals Online",
-  url:         "https://your-domain.com",          // update after deployment
+  url:         "https://shaurya888-ai.github.io/shaurya-deals/",          // update after deployment
   description: "Premium affiliate deals curated for you. Find the best products at the best prices.",
-  twitterHandle: "@shauryadeals",
-  contactEmail:  "contact@shauryadeals.com"
+  twitterHandle: "@Shaurya_Babu",
+  contactEmail:  "shauryakumar210022@gmail.com"
 };
 
 // ─── FIRESTORE COLLECTION NAMES ───────────────────────────────────────────────
