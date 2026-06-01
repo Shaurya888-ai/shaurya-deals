@@ -11,4 +11,4 @@ Disallow: /admin.html
 Disallow: /firebase-config.js
 
 # Sitemap location
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://shaurya888-ai.github.io/shaurya-deals//sitemap.xml
