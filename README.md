@@ -119,8 +119,8 @@ This project is open-source. You are free to use, modify, and deploy it for pers
 
 ## 💬 Support
 
-- 📧 Email: contact@shauryadeals.com
-- 🌐 Website: https://your-domain.com
+- 📧 Email: shauryakumar210022@gmail.com
+- 🌐 Website: https://shaurya888-ai.github.io/shaurya-deals/
 - 🐛 Issues: Open a GitHub issue
 
 ---
