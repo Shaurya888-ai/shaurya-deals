@@ -1,5 +1,5 @@
 # robots.txt — Shaurya Deals
-# https://your-domain.com/robots.txt
+# https://shauryababuu.github.io/Shaurya-Deals//robots.txt
 
 User-agent: *
 Allow: /
@@ -11,4 +11,4 @@ Disallow: /admin.html
 Disallow: /firebase-config.js
 
 # Sitemap location
-Sitemap: https://shaurya888-ai.github.io/shaurya-deals//sitemap.xml
+Sitemap:  https://shauryababuu.github.io/Shaurya-Deals//sitemap.xml
