@@ -120,7 +120,7 @@ This project is open-source. You are free to use, modify, and deploy it for pers
 ## 💬 Support
 
 - 📧 Email: shauryakumar210022@gmail.com
-- 🌐 Website: https://shaurya888-ai.github.io/shaurya-deals/
+- 🌐 Website: https://shauryababuu.github.io/Shaurya-Deals/
 - 🐛 Issues: Open a GitHub issue
 
 ---
